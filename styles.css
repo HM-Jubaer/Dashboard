@@ -136,6 +136,28 @@ input:focus {
     height: 24px;
 }
 
+.iconBar svg:hover {
+    animation: Shake 1s ease-in-out;
+}
+
+@keyframes Shake {
+    25% {
+        transform: rotateY(40deg);
+    }
+
+    50% {
+        transform: rotateY(-40deg);
+    }
+
+    75% {
+        transform: rotateY(40deg);
+    }
+
+    100% {
+        transform: rotateY(-40deg);
+    }
+}
+
 .iconBar img {
     width: 40px;
     height: 40px;
@@ -278,7 +300,7 @@ input:focus {
 
 /* Announcements section */
 .cardAnnouncements {
-    grid-area: 1/2/2/3;
+    grid-area: 1/2/2/3;f
     display: flex;
     flex-direction: column;
     gap: 1rem;
